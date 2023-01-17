@@ -1,0 +1,22 @@
+<div class="nav">
+  <h1><a routerLink="/">Project</a></h1>
+  <div *ngIf="menuType === 'default'" class="nav-search">
+    <input type="text" placeholder="search" />
+    <button>Search</button>
+  </div>
+
+  <div [ngSwitch]="menuType">
+    <ul *ngSwitchCase="'default'">
+      <li><a routerLink="">Home</a></li>
+      <li><a routerLink="/seller-auth">Seller</a></li>
+      <li><a href="#">login</a></li>
+      <li><a href="#">cart(0)</a></li>
+    </ul>
+    <ul *ngSwitchCase="'seller'">
+      <li><a routerLink="">Product List</a></li>
+      <li><a routerLink="/seller-auth">Add Product</a></li>
+      <li><a (click)="logOut()" routerLink="/">logOut</a></li>
+      <li><a href="#">Seller Name</a></li>
+    </ul>
+  </div>
+</div>

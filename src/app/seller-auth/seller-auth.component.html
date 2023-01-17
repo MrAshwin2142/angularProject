@@ -1,0 +1,43 @@
+<div class="container">
+  <div *ngIf="isLogin" class="signup">
+    <form
+      #sellerSignUp="ngForm"
+      (ngSubmit)="signUp(sellerSignUp.value)"
+      class="form"
+    >
+      <h1>Seller SignUp</h1>
+      <input type="text" ngModel name="name" placeholder="Enter name" />
+      <input type="email" ngModel name="email" placeholder="Enter email" />
+      <input
+        type="password"
+        ngModel
+        name="password"
+        placeholder="Enter password"
+      />
+      <button class="btn">SignUp</button>
+      <a (click)="openLogin()" style="text-align: left; cursor: pointer;">Already have account? click here</a>
+    </form>
+  </div>
+
+  <!-- login -->
+
+  <div *ngIf="!isLogin" class="signup">
+    <form
+      #sellerLogIn="ngForm"
+      (ngSubmit)="logIn(sellerLogIn.value)"
+      class="form"
+    >
+      <h1>Seller LogIn</h1>
+      <p class="error">{{errorMsg}}</p>
+      <input type="email" ngModel name="email" placeholder="Enter email" />
+      <input
+        type="password"
+        ngModel
+        name="password"
+        placeholder="Enter password"
+      />
+      <button>LogIn</button>
+      <a (click)="openSingUP()" style="text-align: left; cursor: pointer;">Don't have account? click here</a>
+    </form>
+  </div>
+</div>
