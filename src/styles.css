@@ -12,7 +12,7 @@ body {
   width: 300px;
   color: rgb(208, 113, 40);
 }
-.form input {
+.form input, textarea {
   height: 30px;
   padding-left: 15px;
   margin: 10px;

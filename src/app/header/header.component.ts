@@ -7,16 +7,23 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
   menuType: string = 'default';
+  sellerName: string=' ';
   constructor(private router: Router) {}
   ngOnInit() {
     this.router.events.subscribe((val: any) => {
       // console.log(val.url);
       if (val.url) {
         if (localStorage.getItem('seller') && val.url.includes('seller')) {
-          console.log('in seller area');
+          // console.log('in seller area');
           this.menuType = 'seller';
+          if(localStorage.getItem('seller')){
+            let sellerStore=localStorage.getItem('seller');
+            // console.warn(sellerStore);
+            this.sellerName = sellerStore && JSON.parse(sellerStore)[0]?.name;
+            console.warn(this.sellerName);
+          }
         } else {
-          console.log('out side seller');
+          // console.log('out side seller');
           this.menuType = 'default';
         }
       }

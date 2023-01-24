@@ -5,6 +5,50 @@
       "email": "ash@gmail.com",
       "password": "12345",
       "id": 1
+    },
+    {
+      "name": "Ashwin Dhangar",
+      "email": "ashwindgangar2142002@gmail.com",
+      "password": "12345",
+      "id": 2
+    }
+  ],
+  "product": [
+    {
+      "name": "iPhone 14",
+      "price": 1233,
+      "type": "mobile",
+      "color": "purple",
+      "description": "Apple iPhone 13 Pro Max, 512GB, Gold - Unlocked (Renewed)",
+      "image": "https://www.yankodesign.com/images/design_news/2021/06/auto-draft/iphone_14_max_burgos_1.jpg",
+      "id": 5
+    },
+    {
+      "name": "MacBook Pro",
+      "price": 129900,
+      "type": "laptop",
+      "color": "silver",
+      "description": "I am a macbook pro, with Apple M2 chip and 8GB/256Gb",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2023/01/2022-MacBook-Pro-closed-980x609.jpeg",
+      "id": 7
+    },
+    {
+      "name": "iPhone 14",
+      "price": 1233,
+      "type": "mobile",
+      "color": "purple",
+      "description": "Apple iPhone 13 Pro Max, 512GB, Gold - Unlocked (Renewed)",
+      "image": "https://www.yankodesign.com/images/design_news/2021/06/auto-draft/iphone_14_max_burgos_1.jpg",
+      "id": 8
+    },
+    {
+      "name": "iPhone 14",
+      "price": 1233,
+      "type": "mobile",
+      "color": "purple",
+      "description": "Apple iPhone 13 Pro Max, 512GB, Gold - Unlocked (Renewed)",
+      "image": "https://www.yankodesign.com/images/design_news/2021/06/auto-draft/iphone_14_max_burgos_1.jpg",
+      "id": 11
     }
   ]
 }

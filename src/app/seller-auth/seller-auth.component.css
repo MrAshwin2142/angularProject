@@ -1,0 +1,13 @@
+.image{
+    width: 290px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1px; */
+    /* border: 1px solid blue; */
+}
+.image input{
+    width: 80px;
+    border: none;
+}

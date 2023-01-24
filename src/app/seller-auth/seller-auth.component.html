@@ -6,16 +6,36 @@
       class="form"
     >
       <h1>Seller SignUp</h1>
-      <input type="text" ngModel name="name" placeholder="Enter name" />
-      <input type="email" ngModel name="email" placeholder="Enter email" />
       <input
+        required
+        type="text"
+        ngModel
+        name="name"
+        placeholder="Enter name"
+      />
+      <input
+        required
+        type="email"
+        ngModel
+        name="email"
+        placeholder="Enter email"
+      />
+      <input
+        required
         type="password"
         ngModel
         name="password"
         placeholder="Enter password"
       />
-      <button class="btn">SignUp</button>
-      <a (click)="openLogin()" style="text-align: left; cursor: pointer;">Already have account? click here</a>
+      
+      <!-- <div class="image">
+        <input type="file" ngModel name="image" />
+        <label>select profil picture</label>
+      </div> -->
+      <button  class="btn">SignUp</button>
+      <a (click)="openLogin()" style="text-align: left; cursor: pointer"
+        >Already have account? click here</a
+      >
     </form>
   </div>
 
@@ -28,16 +48,25 @@
       class="form"
     >
       <h1>Seller LogIn</h1>
-      <p class="error">{{errorMsg}}</p>
-      <input type="email" ngModel name="email" placeholder="Enter email" />
+      <p class="error">{{ errorMsg }}</p>
       <input
+        required
+        type="email"
+        ngModel
+        name="email"
+        placeholder="Enter email"
+      />
+      <input
+        required
         type="password"
         ngModel
         name="password"
         placeholder="Enter password"
       />
-      <button>LogIn</button>
-      <a (click)="openSingUP()" style="text-align: left; cursor: pointer;">Don't have account? click here</a>
+      <button >LogIn</button>
+      <a (click)="openSingUP()" style="text-align: left; cursor: pointer"
+        >Don't have account? click here</a
+      >
     </form>
   </div>
 </div>

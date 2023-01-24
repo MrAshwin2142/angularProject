@@ -20,7 +20,6 @@ export class SellerAuthComponent {
     this.seller.sellerLogIn(data);
     if(this.seller.isLoginError){
       this.errorMsg="email or password invalid";
-
     }
     }
   ngOnInit(): void {
